@@ -62,7 +62,8 @@
               <div class="card-body">
                 <form action="{{ url_for('predict')}}" method="post" role="form" data-toggle="validator">
                   <div class="form-group">
-                    <label>Quelle est la température interne du patient ?</label>
+                    <label>Quelle est la température interne du patient ?</label><br>
+                    <strong>high (> 37), mid (>= 36 and <= 37), low (< 36)</strong>
                     <input
                       name="L-CORE-C"
                       class="form-control"
@@ -75,7 +76,8 @@
                     <div class="help-block with-errors"></div>
                   </div>
                   <div class="form-group">
-                    <label>Température de surface du patient en C</label>
+                    <label>Température de surface du patient en C</label><br>
+                    <strong>(> 36.5), mid (>= 36.5 and <= 35), low (< 35)</strong>
                     <input
                       name="L-SURF-C"
                       class="form-control"
@@ -88,7 +90,8 @@
                     <div class="help-block with-errors"></div>
                   </div>
                   <div class="form-group">
-                    <label>Saturation en oxygène en %</label>
+                    <label>Saturation en oxygène en %</label><br>
+                    <strong>excellent (>= 98), good (>= 90 and < 98), fair (>= 80 and < 90), poor (< 80)</strong>
                     <input
                       name="L-O2-C"
                       class="form-control"
@@ -101,7 +104,8 @@
                     <div class="help-block with-errors"></div>
                   </div>
                   <div class="form-group">
-                    <label>Dernière mesure de la pression artérielle</label>
+                    <label>Dernière mesure de la pression artérielle</label><br>
+                    <strong>high (> 130/90), mid (<= 130/90 and >= 90/70), low (< 90/70)</strong>
                     <input
                       name="L-BP-C"
                       class="form-control"
@@ -115,6 +119,8 @@
                   </div>
                   <div class="form-group">
                     <label>Stabilité de la température de surface du patient</label>
+                    <br>
+                    <strong>stable, mod-stable, unstable</strong>
                     <input
                       name="SURF-STBL-C"
                       class="form-control"
@@ -127,7 +133,8 @@
                     <div class="help-block with-errors"></div>
                   </div>
                   <div class="form-group">
-                    <label>Stabilité de la température centrale du patient</label>
+                    <label>Stabilité de la température centrale du patient</label><br>
+                    <strong>stable, mod-stable, unstable</strong>
                     <input
                       name="CORE-STBL-C"
                       class="form-control"
@@ -140,7 +147,8 @@
                     <div class="help-block with-errors"></div>
                   </div>
                   <div class="form-group">
-                    <label>Stabilité de la pression artérielle du patient</label>
+                    <label>Stabilité de la pression artérielle du patient</label><br>
+                    <strong>stable, mod-stable, unstable</strong>
                     <input
                       name="BP-STBL-C"
                       class="form-control"
@@ -155,14 +163,16 @@
   
                   <div class="form-group">
                     <button class="btn btn-primary btn-block" type="submit">
-                      Send
+                      Soumettre
                     </button>
                   </div>
                 </form>
   
                 <br />
                 <br />
-                {{ prediction_text }}
+                <div>
+                    <strong>{{ prediction_text }}</strong>
+                </div>
               </div>
             </div>
           </div>
