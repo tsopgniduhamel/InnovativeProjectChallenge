@@ -44,7 +44,7 @@ def predict():
 
     output = prediction[0]
 
-    return render_template('index.html', prediction_text='La décision finale est : {}'.format(output))
+    return render_template('suivi.html', prediction_text='La décision finale est : {}'.format(output))
 
 
 if __name__ == "__main__":
