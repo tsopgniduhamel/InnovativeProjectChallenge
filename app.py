@@ -14,6 +14,22 @@ model = pickle.load(open('model.pkl', 'rb'))
 def home():
     return render_template('index.html')
 
+
+@app.route('/suivi')
+def suivi():
+    return render_template('suivi.html')
+
+
+@app.route('/consultations')
+def consultations():
+    return render_template('consultations.html')
+
+
+@app.route('/contacts')
+def contacts():
+    return render_template('contacts.html')
+
+
 # To use the predict button in our web-app
 
 

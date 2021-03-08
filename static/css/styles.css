@@ -1,0 +1,26 @@
+body {
+  min-width: 1000px; /* Suppose you want minimum width of 1000px */
+  width: auto !important; /* Firefox will set width as auto */
+  width: 1000px; /* As IE6 ignores !important it will set width as 1000px; */
+}
+
+.container {
+  max-width: 550px;
+}
+
+.has-error label,
+.has-error input,
+.has-error textarea {
+  color: red;
+  border-color: red;
+}
+
+.list-unstyled li {
+  font-size: 13px;
+  padding: 4px 0 0;
+  color: red;
+}
+
+.spacer {
+  flex-grow: 1;
+}
