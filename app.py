@@ -26,9 +26,9 @@ def predict():
     final_features = [np.array(int_features)]
     prediction = model.predict(final_features)
 
-    output = round(prediction[0], 2)
+    output = prediction[0]
 
-    return render_template('index.html', prediction_text='CO2 Emission of the vehicle is :{}'.format(output))
+    return render_template('index.html', prediction_text='La décision finale est : {}'.format(output))
 
 
 if __name__ == "__main__":
