@@ -1,6 +1,6 @@
 # Innovative Projects Challenge
 
-Dans le cadre de la compétition **Innovative Projects Challenge**, nous avons décidé de réaliser le projet **TakeCare237** qui vise à mettre sur pied une application web qui intègre un modèle de Machine Learning.
+Dans le cadre de la compétition **Innovative Projects Challenge (mars 2021)** organisé par l'**Ecole Nationale Supérieure Polytechnique de Yaoundé (ENSPY)** et l'**Ecole Nationale Supérieure des Postes, des Télécommunications et des Technologies de l'Information et de la Communication (SUP'PTIC)**, nous avons décidé de réaliser le projet **TakeCare237** qui vise à mettre sur pied une application web qui intègre un modèle de Machine Learning.
 
 Le but de l'application web est d'indiquer à un patient (au vue de ses paramètres corporels) s'il peut
 
